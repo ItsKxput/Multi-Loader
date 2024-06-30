@@ -110,39 +110,19 @@ void ui::render() {
             ImGui::SetCursorPos(ImVec2(120, 105));
             if (ImGui::Button("Launch", ImVec2(85, 25)))
             {
-                if (current_item == "Blocker")
+                if (current_item == "Option 1")
                 {
                     loader::blocker();
                 }
 
-                if (current_item == "Unlock All")
+                if (current_item == "Option 2")
                 {
                     loader::ua();
                 }
 
-                if (current_item == "AIO + Blocker")
+                if (current_item == "Option 3")
                 {
                     loader::aio();
-                }
-
-                if (current_item == "Vortex V2 Chair")
-                {
-                    loader::v2();
-                }
-
-                if (current_item == "Legit Chair")
-                {
-                    loader::legit();
-                }
-
-                if (current_item == "VIP Chair")
-                {
-                    loader::vip();
-                }
-
-                if (current_item == "Pro Chair")
-                {
-                    loader::pro();
                 }
             }
         }
