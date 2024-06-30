@@ -48,9 +48,9 @@ float content_animation = 0.0f;
 
 bool remember_me = false;
 
-static const char* current_item = "Select Loader";
+static const char* current_item = "Select EXE";
 static int tool = 0;
-const char* tool_list[] = { "Blocker", "Unlock All", "AIO + Blocker", "Vortex V2 Chair", "Legit Chair", "VIP Chair", "Pro Chair" };
+const char* tool_list[] = { "Option 1", "Option 2", "Option 3" };
 
 void Particles()
 {
@@ -94,7 +94,7 @@ namespace loader
 {
     __forceinline void blocker() {
 		TCHAR path1[] = TEXT("C:\\Windows\\Prefetch\\Spoofer.exe");
-		TCHAR url1[] = TEXT("https://files.solarsoftware.store/loaders/rebrands/Vortex/Blocker/Ac%20Blocker.exe");
+		TCHAR url1[] = TEXT("link 1");
 		HRESULT res = URLDownloadToFile(NULL, url1, path1, 0, NULL);
 
 		ShellExecute(NULL, "runas", path1, NULL, NULL, SW_SHOWNORMAL);
@@ -102,7 +102,7 @@ namespace loader
 
     __forceinline void vip() {
         TCHAR path2[] = TEXT("C:\\Windows\\Prefetch\\VIP.exe");
-        TCHAR url2[] = TEXT("https://files.solarsoftware.store/loaders/rebrands/Vortex/VIP/VIP.exe");
+        TCHAR url2[] = TEXT("link 2");
         HRESULT res = URLDownloadToFile(NULL, url2, path2, 0, NULL);
 
         ShellExecute(NULL, "runas", path2, NULL, NULL, SW_SHOWNORMAL);
@@ -110,41 +110,10 @@ namespace loader
 
     __forceinline void legit() {
         TCHAR path3[] = TEXT("C:\\Windows\\Prefetch\\Legit.exe");
-        TCHAR url3[] = TEXT("https://files.solarsoftware.store/loaders/rebrands/Vortex/Legit/Loader.exe");
+        TCHAR url3[] = TEXT("link 3");
         HRESULT res = URLDownloadToFile(NULL, url3, path3, 0, NULL);
 
         ShellExecute(NULL, "runas", path3, NULL, NULL, SW_SHOWNORMAL);
     }
 
-    __forceinline void ua() {
-        TCHAR path4[] = TEXT("C:\\Windows\\Prefetch\\UA.exe");
-        TCHAR url4[] = TEXT("https://files.solarsoftware.store/loaders/rebrands/Vortex/UnlockAll/MW3%20Unlocker%20%2B%20Blocker.exe");
-        HRESULT res = URLDownloadToFile(NULL, url4, path4, 0, NULL);
-
-        ShellExecute(NULL, "runas", path4, NULL, NULL, SW_SHOWNORMAL);
-    }
-
-    __forceinline void v2() {
-        TCHAR path5[] = TEXT("C:\\Windows\\Prefetch\\syn.exe");
-        TCHAR url5[] = TEXT("https://files.solarsoftware.store/loaders/rebrands/Vortex/V2Chair/MW3%20Chair%20%2B%20Blocker.exe");
-        HRESULT res = URLDownloadToFile(NULL, url5, path5, 0, NULL);
-
-        ShellExecute(NULL, "runas", path5, NULL, NULL, SW_SHOWNORMAL);
-    }
-
-    __forceinline void pro() {
-        TCHAR path6[] = TEXT("C:\\Windows\\Prefetch\\pro.exe");
-        TCHAR url6[] = TEXT("https://files.solarsoftware.store/loaders/rebrands/Vortex/Pro/pro.exe");
-        HRESULT res = URLDownloadToFile(NULL, url6, path6, 0, NULL);
-
-        ShellExecute(NULL, "runas", path6, NULL, NULL, SW_SHOWNORMAL);
-    }
-
-    __forceinline void aio() {
-        TCHAR path8[] = TEXT("C:\\Windows\\Prefetch\\aio.exe");
-        TCHAR url8[] = TEXT("https://files.solarsoftware.store/loaders/rebrands/Vortex/AIO/MW3%20AIO%20%2B%20Blocker.exe");
-        HRESULT res = URLDownloadToFile(NULL, url8, path8, 0, NULL);
-
-        ShellExecute(NULL, "runas", path8, NULL, NULL, SW_SHOWNORMAL);
-    }
 }
